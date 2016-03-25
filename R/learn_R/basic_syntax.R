@@ -78,3 +78,18 @@ print(mat)
 
 a = array(c(TRUE, FALSE), dim=c(2,2,2))
 print(a)
+
+#Factors : Saves the vectors and the distinct elements of vectors
+colors <- c('green','green','yellow','red','red','red','green', 'blue')
+colors_factor <- factor(colors)
+print(colors_factor)
+print(nlevels(colors_factor))
+
+#Dataframe : Tabular data objects - unlike matrices, each columns can have different modes
+data = data.frame(
+	Name = c("Ramesh", "Suresh", "Himesh", "Ganesh"),
+	Height = c(123, 234, 345, 456),
+	Weight = c(45, 56, 67, 78),
+	Age = c(21, 22, 23, 24))
+print(data)
+
